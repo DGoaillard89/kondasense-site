@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konda Sence | Remote Temperature Monitoring for Legionella Control</title>
+    <meta name="description" content="Konda Sence replaces manual legionella temperature checks with wireless sensors that monitor your water system 24/7 and keep your logbook up to date automatically.">
+    <link rel="canonical" href="https://kondasense.com/">
+    <meta name="theme-color" content="#22114F">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Konda Sence">
+    <meta property="og:url" content="https://kondasense.com/">
+    <meta property="og:title" content="Konda Sence | Remote Temperature Monitoring for Legionella Control">
+    <meta property="og:description" content="Wireless sensors that watch your water temperatures 24/7 and keep your legionella logbook up to date automatically.">
+    <meta property="og:image" content="https://kondasense.com/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"Organization","@id":"https://kondasense.com/#org","name":"Konda Sence","url":"https://kondasense.com/","logo":"https://kondasense.com/assets/images/konda-logo.png","description":"Remote temperature monitoring for legionella control."},
+      {"@type":"WebSite","name":"Konda Sence","url":"https://kondasense.com/","publisher":{"@id":"https://kondasense.com/#org"}}
+    ]}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/images/konda-mark.svg">
+    <link rel="stylesheet" href="styles/style.css?v=5">
+</head>
+<body>
+    <!-- Konda K mark, redrawn as a vector from the official logo (assets/images/konda-logo.png) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="konda-mark" viewBox="0 0 326 416">
+            <polygon points="0,0 160,0 0,233"/>
+            <polygon points="285,0 326,0 326,416 297,416 160,191"/>
+            <polygon points="0,416 93,281 170,416"/>
+        </symbol>
+    </svg>
+    <header class="site-header">
+        <div class="nav">
+            <a href="#top" class="brand" aria-label="Konda Sence home">
+                <svg class="brand-mark" aria-hidden="true"><use href="#konda-mark"/></svg><span class="brand-name">Konda <strong>Sence</strong></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#how">How it works</a>
+                <a href="#why">Why legionella</a>
+                <a href="#insights">Insights</a>
+                <a href="#outlets">Outlets</a>
+                <a href="#hardware">Hardware</a>
+            </nav>
+            <div class="nav-end">
+                <a href="#contact" class="nav-cta">Book a demo <span aria-hidden="true">→</span></a>
+                <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Remote legionella monitoring</span>
+                    <h1>Every outlet, every tank, <span class="accent">monitored 24/7.</span></h1>
+                    <p class="lead">Konda Sence replaces clipboard temperature checks with wireless sensors that watch your water system around the clock. They alert you the moment temperatures drift into the legionella risk zone and fill in your L8 logbook automatically.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Book a demo</a>
+                        <a href="#how" class="btn btn-ghost">See how it works</a>
+                    </div>
+                    <ul class="hero-stats">
+                        <li><strong>24/7</strong><span>continuous readings</span></li>
+                        <li><strong>Instant</strong><span>out-of-range alerts</span></li>
+                        <li><strong>0</strong><span>paper logbooks</span></li>
+                    </ul>
+                </div>
+
+                <figure class="hero-visual">
+                    <svg class="diagram" viewBox="0 40 700 490" role="img" aria-labelledby="diagram-title">
+                        <title id="diagram-title">Building cross-section showing Konda Nodes on the cold water tank, calorifier and outlets, sending readings wirelessly to the Konda Hub, the cloud and the Konda app</title>
+
+                        <!-- Building -->
+                        <g class="building">
+                            <rect x="130" y="100" width="380" height="410" rx="4"/>
+                            <line x1="130" y1="200" x2="510" y2="200"/>
+                            <line x1="130" y1="300" x2="510" y2="300"/>
+                            <line x1="130" y1="400" x2="510" y2="400"/>
+                            <line class="ground" x1="0" y1="510" x2="700" y2="510"/>
+                        </g>
+                        <g class="room-labels">
+                            <text x="140" y="118">Floor 3</text>
+                            <text x="140" y="218">Floor 2</text>
+                            <text x="140" y="318">Floor 1</text>
+                            <text x="140" y="503">Plant room</text>
+                        </g>
+
+                        <!-- Cold water storage tank -->
+                        <rect class="tank" x="360" y="50" width="110" height="50" rx="5"/>
+                        <text class="equip-label" x="415" y="80">CWST</text>
+
+                        <!-- Calorifier -->
+                        <rect class="calorifier" x="170" y="430" width="90" height="65" rx="18"/>
+                        <text class="equip-label" x="215" y="467">Calorifier</text>
+
+                        <!-- Pipework -->
+                        <g class="pipes">
+                            <path class="pipe cold" d="M400 100 V480 H260"/>
+                            <path class="pipe hot" d="M242 430 V140 H220"/>
+                            <path class="pipe return" d="M220 140 V430"/>
+
+                            <path class="pipe hot" d="M242 165 H305 V177"/>
+                            <path class="pipe hot" d="M242 265 H305 V277"/>
+                            <path class="pipe hot" d="M242 365 H305 V377"/>
+                            <path class="pipe cold" d="M400 165 H335 V177"/>
+                            <path class="pipe cold" d="M400 265 H335 V277"/>
+                            <path class="pipe cold" d="M400 365 H335 V377"/>
+                        </g>
+
+                        <!-- Basins -->
+                        <g class="basins">
+                            <rect x="292" y="178" width="56" height="12" rx="3"/>
+                            <rect x="292" y="278" width="56" height="12" rx="3"/>
+                            <rect x="292" y="378" width="56" height="12" rx="3"/>
+                        </g>
+
+                        <!-- Wireless links: node to hub -->
+                        <g class="signals">
+                            <path d="M360 80 Q470 250 460 440"/>
+                            <path d="M270 165 Q430 300 452 440"/>
+                            <path d="M370 165 Q450 300 466 440"/>
+                            <path d="M242 415 Q350 400 430 455"/>
+                            <path d="M220 415 Q340 440 430 468"/>
+                            <path class="uplink" d="M495 450 C560 430 600 300 622 205"/>
+                            <path class="uplink" d="M628 205 V268"/>
+                        </g>
+
+                        <!-- Konda Hub -->
+                        <g class="hub">
+                            <rect class="hub-body" x="430" y="438" width="64" height="44" rx="6"/>
+                            <rect class="hub-screen" x="437" y="445" width="50" height="17" rx="2"/>
+                            <text class="hub-text" id="hub-readout" x="462" y="457">16.2°C</text>
+                            <circle class="hub-led" cx="484" cy="474" r="2.2"/>
+                            <text class="equip-label small" x="462" y="499">Konda Hub</text>
+                        </g>
+
+                        <!-- Cloud -->
+                        <g class="cloud">
+                            <circle cx="602" cy="182" r="20"/>
+                            <circle cx="630" cy="166" r="26"/>
+                            <circle cx="656" cy="184" r="18"/>
+                            <rect x="602" y="180" width="54" height="22"/>
+                            <text x="629" y="190">Cloud</text>
+                        </g>
+
+                        <!-- Konda app (phone) -->
+                        <g class="phone">
+                            <rect class="phone-body" x="572" y="270" width="112" height="180" rx="14"/>
+                            <rect class="phone-screen" x="579" y="280" width="98" height="160" rx="8"/>
+                            <text class="app-title" x="587" y="297">Konda app</text>
+                            <text class="app-site" x="587" y="309">Main building</text>
+                            <g id="app-status" class="app-status">
+                                <rect x="585" y="316" width="86" height="40" rx="6"/>
+                                <text id="app-status-title" x="592" y="332">All compliant</text>
+                                <text id="app-status-sub" class="sub" x="592" y="346">5 nodes · live</text>
+                            </g>
+                            <g class="app-rows">
+                                <rect x="585" y="364" width="86" height="18" rx="4"/>
+                                <text x="592" y="376">Logbook: auto</text>
+                                <rect x="585" y="388" width="86" height="18" rx="4"/>
+                                <text x="592" y="400">Next report: Fri</text>
+                                <rect x="585" y="412" width="86" height="18" rx="4"/>
+                                <text x="592" y="424">Flushing: 2 due</text>
+                            </g>
+                        </g>
+
+                        <!-- Leader lines for plant-room tags -->
+                        <g class="leaders">
+                            <line x1="114" y1="369" x2="220" y2="413"/>
+                            <line x1="114" y1="425" x2="242" y2="415"/>
+                        </g>
+
+                        <!-- Konda Nodes (sensors) -->
+                        <g class="sensor" data-sensor="cwst" transform="translate(360 80)">
+                            <circle class="pulse" r="7"><animate attributeName="r" values="7;18" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.2s" repeatCount="indefinite"/></circle>
+                            <circle class="dot" r="6.5"/>
+                        </g>
+                        <g class="sensor" data-sensor="hot" transform="translate(270 165)">
+                            <circle class="pulse" r="7"><animate attributeName="r" values="7;18" dur="2.2s" begin=".4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.2s" begin=".4s" repeatCount="indefinite"/></circle>
+                            <circle class="dot" r="6.5"/>
+                        </g>
+                        <g class="sensor" data-sensor="cold" transform="translate(370 165)">
+                            <circle class="pulse" r="7"><animate attributeName="r" values="7;18" dur="2.2s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.2s" begin=".8s" repeatCount="indefinite"/></circle>
+                            <circle class="dot" r="6.5"/>
+                        </g>
+                        <g class="sensor" data-sensor="flow" transform="translate(242 415)">
+                            <circle class="pulse" r="7"><animate attributeName="r" values="7;18" dur="2.2s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.2s" begin="1.2s" repeatCount="indefinite"/></circle>
+                            <circle class="dot" r="6.5"/>
+                        </g>
+                        <g class="sensor" data-sensor="return" transform="translate(220 415)">
+                            <circle class="pulse" r="7"><animate attributeName="r" values="7;18" dur="2.2s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="2.2s" begin="1.6s" repeatCount="indefinite"/></circle>
+                            <circle class="dot" r="6.5"/>
+                        </g>
+
+                        <!-- Live reading tags -->
+                        <g class="tag" data-tag="cwst" transform="translate(272 58)">
+                            <rect width="80" height="34" rx="6"/>
+                            <text class="tag-name" x="8" y="14">CWST inlet</text>
+                            <text class="tag-temp" x="8" y="28">16.2°C</text>
+                        </g>
+                        <g class="tag" data-tag="hot" transform="translate(250 108)">
+                            <rect width="66" height="34" rx="6"/>
+                            <text class="tag-name" x="8" y="14">Hot outlet</text>
+                            <text class="tag-temp" x="8" y="28">55.0°C</text>
+                        </g>
+                        <g class="tag" data-tag="cold" transform="translate(322 108)">
+                            <rect width="66" height="34" rx="6"/>
+                            <text class="tag-name" x="8" y="14">Cold outlet</text>
+                            <text class="tag-temp" x="8" y="28">17.8°C</text>
+                        </g>
+                        <g class="tag" data-tag="return" transform="translate(28 352)">
+                            <rect width="86" height="34" rx="6"/>
+                            <text class="tag-name" x="8" y="14">Calorifier return</text>
+                            <text class="tag-temp" x="8" y="28">53.4°C</text>
+                        </g>
+                        <g class="tag" data-tag="flow" transform="translate(28 408)">
+                            <rect width="86" height="34" rx="6"/>
+                            <text class="tag-name" x="8" y="14">Calorifier flow</text>
+                            <text class="tag-temp" x="8" y="28">62.1°C</text>
+                        </g>
+                    </svg>
+                    <figcaption class="legend">
+                        <span><i class="swatch hot"></i>Hot flow</span>
+                        <span><i class="swatch return"></i>Hot return</span>
+                        <span><i class="swatch cold"></i>Cold</span>
+                        <span><i class="swatch node"></i>Konda Node</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="how" class="section how-section">
+            <div class="container">
+                <div class="feat-intro">
+                    <div>
+                        <span class="eyebrow dark">How it works</span>
+                        <h2>From pipe to report, without a clipboard</h2>
+                    </div>
+                    <div class="feat-intro-copy">
+                        <p>Fitting takes minutes, with no plumbing changes and no downtime for your water system.</p>
+                        <ul class="feat-standards" aria-label="Installation">
+                            <li>No plumbing changes</li>
+                            <li>No downtime</li>
+                            <li>Live the same day</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ol class="steps">
+                    <li class="step">
+                        <div class="step-marker"><span>01</span></div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="panel sv-fit">
+                                <svg viewBox="0 0 220 100">
+                                    <defs>
+                                        <linearGradient id="svPipe" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0" stop-color="#E4E1EE"/>
+                                            <stop offset=".45" stop-color="#FFFFFF"/>
+                                            <stop offset="1" stop-color="#CFCBDD"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <rect x="-4" y="58" width="228" height="30" rx="6" fill="url(#svPipe)" stroke="#D9D6E5"/>
+                                    <rect x="86" y="54" width="9" height="38" rx="3" fill="#1A7C7D"/>
+                                    <rect x="125" y="54" width="9" height="38" rx="3" fill="#1A7C7D"/>
+                                    <rect x="78" y="24" width="64" height="38" rx="12" fill="#239FA0"/>
+                                    <rect x="78" y="24" width="64" height="14" rx="7" fill="#fff" opacity=".12"/>
+                                    <circle cx="110" cy="43" r="8" fill="none" stroke="#fff" stroke-width="2" opacity=".9"/>
+                                    <path d="M150 22a12 12 0 0 1 0 17M157 16a20 20 0 0 1 0 29" fill="none" stroke="#5EE6D6" stroke-width="2.2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="sv-tag">Fitted in 4 min</span>
+                                <span class="sv-temp">54.7°C</span>
+                            </div>
+                        </div>
+                        <h3>Fit Konda Nodes</h3>
+                        <p>Clamp-on sensors go on your tanks, calorifiers and sentinel outlets, the same points you check by hand today.</p>
+                    </li>
+                    <li class="step">
+                        <div class="step-marker"><span>02</span></div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="panel sv-hub">
+                                <div class="sv-head"><span class="live"></span>Konda Hub<em>12 online</em></div>
+                                <ul>
+                                    <li><span>CWST inlet</span><i class="sig s4"><b></b><b></b><b></b><b></b></i></li>
+                                    <li><span>Calorifier flow</span><i class="sig s4"><b></b><b></b><b></b><b></b></i></li>
+                                    <li><span>Hot outlet F3</span><i class="sig s3"><b></b><b></b><b></b><b></b></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3>Hub collects readings</h3>
+                        <p>Every Node reports wirelessly to the Konda Hub, which sends the data securely to the cloud.</p>
+                    </li>
+                    <li class="step">
+                        <div class="step-marker"><span>03</span></div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="panel sv-check">
+                                <div class="sv-head">HSG274 check</div>
+                                <ul>
+                                    <li><span><i class="dot hot"></i>Hot outlet</span><b>55.0°</b><small>≥ 50°</small><em>✓</em></li>
+                                    <li><span><i class="dot cold"></i>Cold outlet</span><b>17.8°</b><small>&lt; 20°</small><em>✓</em></li>
+                                    <li><span><i class="dot hot"></i>Calorifier</span><b>62.1°</b><small>≥ 60°</small><em>✓</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3>Checked against L8</h3>
+                        <p>Each reading is checked against HSG274 temperature limits for that outlet type, around the clock.</p>
+                    </li>
+                    <li class="step">
+                        <div class="step-marker"><span>04</span></div>
+                        <div class="step-visual" aria-hidden="true">
+                            <div class="panel sv-done">
+                                <div class="sv-alert">
+                                    <span class="sv-icon warn">!</span>
+                                    <div><strong>Hot outlet F3 at 48.6°C</strong><span>SMS sent · 09:24</span></div>
+                                </div>
+                                <div class="sv-alert">
+                                    <span class="sv-icon ok">✓</span>
+                                    <div><strong>Logbook updated</strong><span>96 readings today</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Alerts &amp; logbook</h3>
+                        <p>You get an alert the moment something drifts, and your compliance logbook fills itself in.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- WHY LEGIONELLA -->
+        <section id="why" class="section section-tint">
+            <div class="container why-grid">
+                <div>
+                    <span class="eyebrow dark">Why legionella</span>
+                    <h2>Temperature is your first line of defence</h2>
+                    <p>Legionella bacteria multiply in water between <strong>20°C and 45°C</strong>. Under the HSE's Approved Code of Practice L8, duty holders must control that risk and keep records that prove it.</p>
+                    <p>Most sites still rely on monthly manual checks, which give a snapshot once a month and leave weeks of blind spots in between. Konda Sence monitors continuously, so problems are caught in minutes, not weeks.</p>
+                    <ul class="checklist">
+                        <li>Supports ACoP L8 and HSG274 Part 2 temperature monitoring</li>
+                        <li>Time-stamped evidence for audits and insurers</li>
+                        <li>Fewer site visits and less manual testing</li>
+                    </ul>
+                </div>
+
+                <div class="temp-card">
+                    <h3>HSG274 temperature targets</h3>
+                    <div class="scale" aria-hidden="true">
+                        <div class="scale-bar">
+                            <span class="zone safe-cold" style="--from:0; --to:20">Safe</span>
+                            <span class="zone risk" style="--from:20; --to:45">Growth zone</span>
+                            <span class="zone caution" style="--from:45; --to:50"></span>
+                            <span class="zone safe-hot" style="--from:50; --to:70">Safe</span>
+                        </div>
+                        <div class="scale-ticks">
+                            <span style="--at:0">0°</span>
+                            <span style="--at:20">20°</span>
+                            <span style="--at:45">45°</span>
+                            <span style="--at:50">50°</span>
+                            <span style="--at:60">60°</span>
+                            <span style="--at:70">70°C</span>
+                        </div>
+                    </div>
+                    <ul class="targets">
+                        <li><span class="pill cold">Cold</span><span>Below <strong>20°C</strong> at outlets within 2 minutes</span></li>
+                        <li><span class="pill hot">Hot</span><span>Stored at <strong>60°C</strong> or above in the calorifier</span></li>
+                        <li><span class="pill hot">Hot</span><span>At least <strong>50°C</strong> at outlets within 1 minute (55°C in healthcare)</span></li>
+                        <li><span class="pill return">Return</span><span>At least <strong>50°C</strong> on the calorifier return</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSIGHTS: trend analysis & anomaly alerts (charts drawn by main.js from simulated data) -->
+        <section id="insights" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow dark">Insights</span>
+                    <h2>See problems coming, not just arriving</h2>
+                    <p>A monthly check gives you 12 readings a year. Konda Nodes record thousands of readings a month at every point, so you can see the trend as well as each reading.</p>
+                </div>
+
+                <div class="insight-grid">
+                    <article class="chart-card">
+                        <header class="chart-head">
+                            <span class="chart-kicker">Trend analysis</span>
+                            <h3>Calorifier return, daily average</h3>
+                            <p>The return temperature is slowly falling. Konda projects the trend forward and warns you before it drops below 50°C, while there's still time to service the calorifier.</p>
+                        </header>
+                        <div class="chart" id="trend-chart" role="img" aria-label="Line chart of calorifier return temperature over the last 30 days, falling from about 56°C to about 52°C. The projected trend drops below the 50°C limit in under two weeks."></div>
+                        <ul class="chart-notes">
+                            <li><span class="key key-line"></span>Daily average</li>
+                            <li><span class="key key-dash"></span>Projected trend</li>
+                            <li><span class="key key-limit"></span>50°C HSG274 minimum</li>
+                        </ul>
+                    </article>
+
+                    <article class="chart-card">
+                        <header class="chart-head">
+                            <span class="chart-kicker">Anomaly alerts</span>
+                            <h3>Floor 3 hot outlet, last 3 days</h3>
+                            <p>Konda learns each outlet's normal pattern. When a reading falls outside that pattern, it sends an alert, even if the reading is still within the legal limits.</p>
+                        </header>
+                        <div class="chart" id="anomaly-chart" role="img" aria-label="Line chart of the floor 3 hot outlet temperature over 3 days. Each time the tap is used, the temperature peaks at about 56°C, within its usual range. On the third afternoon the peaks only reach about 51°C. That is still above the 50°C limit, but Konda flags them as an anomaly."></div>
+                        <ul class="chart-notes">
+                            <li><span class="key key-line"></span>Outlet temperature</li>
+                            <li><span class="key key-band"></span>Usual range</li>
+                            <li><span class="key key-anomaly"></span>Anomaly</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- LITTLE-USED OUTLETS -->
+        <section id="outlets" class="section section-tint">
+            <div class="container">
+                <div class="outlets-intro">
+                    <div>
+                        <span class="eyebrow dark">Little-used outlets</span>
+                        <h2>Only flush the outlets that need flushing</h2>
+                        <p>Under HSG274, outlets that aren't used regularly should be flushed at least weekly. On a large site that means someone walking every corridor and running every tap, which can add up to a full-time salary.</p>
+                        <p>Konda Nodes detect each time water flows through an outlet. Each week you get a short list of the outlets that <strong>haven't</strong> been used, so you only flush those, and every flush is logged.</p>
+                    </div>
+                    <div class="flush-stat">
+                        <span class="flush-stat-label">This week's flushing list</span>
+                        <span class="flush-stat-value">38 <small>of 412 outlets</small></span>
+                        <span class="flush-stat-sub">The other 374 were used and don't need flushing.</span>
+                    </div>
+                </div>
+
+                <article class="chart-card usage-card">
+                    <header class="chart-head row">
+                        <div>
+                            <span class="chart-kicker">Outlet usage, last 28 days</span>
+                            <h3>Main building, sample of 10 outlets</h3>
+                        </div>
+                        <ul class="chart-notes">
+                            <li><span class="key key-cell used"></span>Flow detected</li>
+                            <li><span class="key key-cell idle"></span>No flow</li>
+                        </ul>
+                    </header>
+                    <div class="usage" id="usage-grid" role="table" aria-label="Outlet usage over the last 28 days"></div>
+                </article>
+
+                <article class="calc">
+                    <div class="calc-inputs">
+                        <h3>What could your site save?</h3>
+                        <label>
+                            <span>Outlets on site <output id="out-outlets">400</output></span>
+                            <input type="range" id="in-outlets" min="50" max="2000" step="10" value="400">
+                        </label>
+                        <label>
+                            <span>Share that are little-used <output id="out-share">15%</output></span>
+                            <input type="range" id="in-share" min="5" max="50" step="1" value="15">
+                        </label>
+                        <p class="calc-assume">These are illustrative figures. They assume weekly flushing, 3 minutes per outlet including walking and recording, £15/hour staff cost, and 12 litres per flush. Your site will vary.</p>
+                    </div>
+                    <div class="calc-results">
+                        <div class="compare">
+                            <div class="compare-row">
+                                <span class="compare-label">Flushing every outlet</span>
+                                <div class="compare-track"><span class="compare-bar all" id="bar-all"></span></div>
+                                <span class="compare-val" id="val-all"></span>
+                            </div>
+                            <div class="compare-row">
+                                <span class="compare-label">Konda flush list only</span>
+                                <div class="compare-track"><span class="compare-bar konda" id="bar-konda"></span></div>
+                                <span class="compare-val" id="val-konda"></span>
+                            </div>
+                        </div>
+                        <div class="tiles">
+                            <div class="tile"><span class="tile-label">Staff time saved</span><span class="tile-value" id="t-hours"></span><span class="tile-sub" id="t-fte"></span></div>
+                            <div class="tile"><span class="tile-label">Labour cost saved</span><span class="tile-value" id="t-money"></span><span class="tile-sub">per year</span></div>
+                            <div class="tile"><span class="tile-label">Water saved</span><span class="tile-value" id="t-water"></span><span class="tile-sub" id="t-water-sub"></span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- HARDWARE -->
+        <section id="hardware" class="hardware">
+            <div class="container section-head light">
+                <span class="eyebrow">Hardware</span>
+                <h2>Two devices. No clipboard.</h2>
+                <p>A Hub for each site and a Node at each point you monitor. That's the whole kit.</p>
+            </div>
+            <div class="hw-stage">
+                <img src="assets/images/konda-hardware.jpg" alt="Konda Hub showing a live CWST inlet temperature of 16.2°C, with a teal Konda Node sensor beside it sending data wirelessly" class="hardware-img">
+                <a href="#hw-hub" class="hotspot" data-hw="hub" style="--x:28.5%; --y:40%"><span class="hotspot-label">Konda Hub</span></a>
+                <a href="#hw-node" class="hotspot right" data-hw="node" style="--x:76.5%; --y:66%"><span class="hotspot-label">Konda Node</span></a>
+            </div>
+            <div class="container hardware-cards">
+                <article class="hw-card" id="hw-hub" data-hw="hub">
+                    <div class="hw-card-top">
+                        <span class="hw-num">01</span>
+                        <span class="hw-role">Gateway · one per site</span>
+                    </div>
+                    <h3>Konda Hub</h3>
+                    <p>Collects readings from every Node, shows live temperatures on its built-in display and sends data securely to the Konda cloud.</p>
+                    <ul class="hw-chips">
+                        <li>Live display</li>
+                        <li>Wireless gateway</li>
+                        <li>Secure cloud uplink</li>
+                    </ul>
+                </article>
+                <article class="hw-card" id="hw-node" data-hw="node">
+                    <div class="hw-card-top">
+                        <span class="hw-num">02</span>
+                        <span class="hw-role">Sensor · one per monitoring point</span>
+                    </div>
+                    <h3>Konda Node</h3>
+                    <p>A rugged wireless sensor with clamp-on probes. Fit one to a pipe, tank or outlet and it starts reporting straight away.</p>
+                    <ul class="hw-chips">
+                        <li>Clamp-on probes</li>
+                        <li>Rugged housing</li>
+                        <li>Fits in minutes</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- FEATURES & INDUSTRIES -->
+        <section id="features" class="section features-section">
+            <div class="container">
+                <div class="feat-intro">
+                    <div>
+                        <span class="eyebrow dark">Features</span>
+                        <h2>Compliance, handled</h2>
+                    </div>
+                    <div class="feat-intro-copy">
+                        <p>Everything you need to stay in control of your water system and prove it, in one place.</p>
+                        <ul class="feat-standards" aria-label="Aligned with">
+                            <li>HSG274 Part 2</li>
+                            <li>L8 ACoP</li>
+                            <li>UK GDPR</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bento">
+                    <!-- Real-time alerts -->
+                    <article class="feat feat-dark span-7">
+                        <div class="feat-copy">
+                            <span class="feat-kicker"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></svg>Real-time alerts</span>
+                            <h3>Know before it becomes a risk</h3>
+                            <p>SMS and email alerts the moment a reading leaves the safe range.</p>
+                        </div>
+                        <div class="feat-visual alerts" aria-hidden="true">
+                            <div class="alert-track">
+                                <div class="alert-card warn">
+                                    <span class="alert-icon">!</span>
+                                    <div>
+                                        <span class="alert-meta">SMS · now</span>
+                                        <strong>Floor 3 hot outlet at 48.6°C</strong>
+                                        <span>Below the 50°C minimum · Main building</span>
+                                    </div>
+                                    <span class="alert-temp">48.6°</span>
+                                </div>
+                                <span class="alert-gap">Resolved in 18 min</span>
+                                <div class="alert-card ok">
+                                    <span class="alert-icon">✓</span>
+                                    <div>
+                                        <span class="alert-meta">Email · 09:42</span>
+                                        <strong>Back in range at 55.2°C</strong>
+                                        <span>Logged automatically</span>
+                                    </div>
+                                    <span class="alert-temp">55.2°</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Automatic logbook -->
+                    <article class="feat span-5">
+                        <div class="feat-copy">
+                            <span class="feat-kicker"><svg viewBox="0 0 24 24"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 8h6M9 11.5h4"/></svg>Automatic logbook</span>
+                            <h3>Logs that fill themselves in</h3>
+                            <p>Every reading recorded and time-stamped. No clipboards, no gaps.</p>
+                        </div>
+                        <div class="feat-visual" aria-hidden="true">
+                            <div class="panel">
+                                <div class="panel-head"><span>Point</span><span>Time</span><span>Temp</span></div>
+                                <ul class="log">
+                                    <li><span><i class="dot cold"></i>CWST inlet</span><span>09:00</span><b>16.2°</b><em>Pass</em></li>
+                                    <li><span><i class="dot hot"></i>Calorifier flow</span><span>09:00</span><b>62.1°</b><em>Pass</em></li>
+                                    <li><span><i class="dot hot"></i>Hot outlet F3</span><span>09:00</span><b>55.0°</b><em>Pass</em></li>
+                                    <li><span><i class="dot cold"></i>Cold outlet F3</span><span>08:45</span><b>17.8°</b><em>Pass</em></li>
+                                </ul>
+                                <div class="panel-foot"><span class="live"></span>2,976 readings logged this month</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Audit-ready reports -->
+                    <article class="feat span-5">
+                        <div class="feat-copy">
+                            <span class="feat-kicker"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>Audit-ready reports</span>
+                            <h3>Evidence your auditor will love</h3>
+                            <p>Compliance reports for auditors, insurers or your water hygiene contractor.</p>
+                        </div>
+                        <div class="feat-visual report" aria-hidden="true">
+                            <div class="doc doc-back"></div>
+                            <div class="doc">
+                                <div class="doc-top">
+                                    <span class="doc-mark">K</span>
+                                    <div><strong>L8 temperature report</strong><span>Main building · September</span></div>
+                                </div>
+                                <div class="doc-stats">
+                                    <div><b>99.8%</b><span>In range</span></div>
+                                    <div><b>42</b><span>Points</span></div>
+                                    <div><b>1</b><span>Resolved</span></div>
+                                </div>
+                                <span class="doc-bars"><i style="--h:62%"></i><i style="--h:78%"></i><i style="--h:70%"></i><i style="--h:88%"></i><i style="--h:74%"></i><i style="--h:84%"></i><i style="--h:80%"></i><i style="--h:92%"></i></span>
+                                <span class="doc-line w90"></span>
+                                <span class="doc-line w60"></span>
+                            </div>
+                            <span class="seal"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+                        </div>
+                    </article>
+
+                    <!-- Multi-site dashboard -->
+                    <article class="feat span-7">
+                        <div class="feat-copy">
+                            <span class="feat-kicker"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l6-4v17"/><path d="M11 21V10h8v11"/><path d="M8 11v.01M8 15v.01M15 14h1M15 17h1"/></svg>Multi-site dashboard</span>
+                            <h3>Your whole estate at a glance</h3>
+                            <p>Every building in one place, with status up front and detail on demand.</p>
+                        </div>
+                        <div class="feat-visual" aria-hidden="true">
+                            <div class="panel">
+                                <div class="sites-summary">
+                                    <div><b>3</b><span>Sites</span></div>
+                                    <div><b>124</b><span>Nodes</span></div>
+                                    <div><b>99.6%</b><span>In range</span></div>
+                                    <div class="warn"><b>1</b><span>Open alert</span></div>
+                                </div>
+                                <ul class="sites">
+                                    <li><span class="site-dot ok"></span><strong>Main building</strong><span class="site-meter"><i style="--w:100%"></i></span><span class="site-pct">100%</span><em class="badge ok">Compliant</em></li>
+                                    <li><span class="site-dot warn"></span><strong>Riverside care home</strong><span class="site-meter warn"><i style="--w:94%"></i></span><span class="site-pct">94%</span><em class="badge flush">1 alert</em></li>
+                                    <li><span class="site-dot ok"></span><strong>North campus</strong><span class="site-meter"><i style="--w:100%"></i></span><span class="site-pct">100%</span><em class="badge ok">Compliant</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Trends & insight -->
+                    <article class="feat span-6">
+                        <div class="feat-copy">
+                            <span class="feat-kicker"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Trends &amp; insight</span>
+                            <h3>See failures coming</h3>
+                            <p>Spot a failing calorifier or a warming cold supply long before it fails a check.</p>
+                        </div>
+                        <div class="feat-visual" aria-hidden="true">
+                            <div class="panel trend">
+                                <div class="trend-head">
+                                    <span>Hot outlet F3 · 30 days</span>
+                                    <em class="badge flush">Projected below 50°C in 9 days</em>
+                                </div>
+                                <svg class="mini-trend" viewBox="0 0 320 120">
+                                    <defs>
+                                        <linearGradient id="mtFill" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0" stop-color="#239FA0" stop-opacity=".28"/>
+                                            <stop offset="1" stop-color="#239FA0" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <line x1="0" y1="30" x2="320" y2="30" class="mt-grid"/>
+                                    <line x1="0" y1="60" x2="320" y2="60" class="mt-grid"/>
+                                    <rect x="0" y="90" width="320" height="30" class="mt-risk"/>
+                                    <line x1="0" y1="90" x2="320" y2="90" class="mt-limit"/>
+                                    <text x="316" y="84" class="mt-label">50°C</text>
+                                    <path class="mt-area" d="M0,22 L22,26 L44,23 L66,32 L88,34 L110,39 L132,37 L154,46 L176,48 L198,55 L220,57 L220,120 L0,120 Z"/>
+                                    <polyline class="mt-line" points="0,22 22,26 44,23 66,32 88,34 110,39 132,37 154,46 176,48 198,55 220,57"/>
+                                    <polyline class="mt-proj" points="220,57 285,90"/>
+                                    <circle cx="220" cy="57" r="4" class="mt-now"/>
+                                    <circle cx="285" cy="90" r="9" class="mt-ring"/>
+                                    <circle cx="285" cy="90" r="4.5" class="mt-dot"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Little-used outlets -->
+                    <article class="feat span-6">
+                        <div class="feat-copy">
+                            <span class="feat-kicker"><svg viewBox="0 0 24 24"><path d="M4 7h9a3 3 0 0 1 3 3v2"/><path d="M4 4v6M16 12h3"/><path d="M17.5 16c0 1.2-.7 2-1.5 2s-1.5-.8-1.5-2 1.5-2.5 1.5-2.5 1.5 1.3 1.5 2.5z"/></svg>Little-used outlets</span>
+                            <h3>Only flush what needs it</h3>
+                            <p>Spots outlets that haven't been used, so your team skips the rest.</p>
+                        </div>
+                        <div class="feat-visual" aria-hidden="true">
+                            <div class="panel mini-usage">
+                                <div class="mu-row"><span>Kitchen sink</span><span class="mu-cells"><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i class="o"></i><i class="o"></i><i class="o"></i><i class="o"></i></span></div>
+                                <div class="mu-row"><span>Staff WC</span><span class="mu-cells"><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i></i><i class="o"></i></span></div>
+                                <div class="mu-row flag"><span>Accessible WC</span><span class="mu-cells"><i></i><i class="o"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><em class="badge flush">Flush</em></div>
+                                <div class="mu-row"><span>Shower 2</span><span class="mu-cells"><i></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i><i></i><i class="o"></i><i class="o"></i></span></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="industries">
+                    <h3>Built for</h3>
+                    <ul>
+                        <li>Healthcare</li>
+                        <li>Care homes</li>
+                        <li>Hotels &amp; leisure</li>
+                        <li>Schools &amp; universities</li>
+                        <li>Housing &amp; landlords</li>
+                        <li>Offices &amp; commercial</li>
+                        <li>Facilities management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <span class="eyebrow">Book a demo</span>
+                    <h2>See Konda Sence on your site</h2>
+                    <p>Tell us a little about your buildings and we'll show you how continuous monitoring could replace your manual temperature checks.</p>
+                    <ul class="contact-points">
+                        <li>No obligation, 30-minute demo</li>
+                        <li>Free site assessment</li>
+                        <li>Works alongside your existing water hygiene contractor</li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="demo-form" novalidate>
+                    <div class="form-row">
+                        <label>Name<input type="text" name="name" required autocomplete="name"></label>
+                        <label>Company<input type="text" name="company" autocomplete="organization"></label>
+                    </div>
+                    <div class="form-row">
+                        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+                        <label>Phone<input type="tel" name="phone" required autocomplete="tel" maxlength="40"></label>
+                    </div>
+                    <div class="form-row">
+                        <label>Postcode<input type="text" name="postcode" required autocomplete="postal-code" maxlength="10" pattern="[A-Za-z]{1,2}[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}"></label>
+                        <label>Number of sites
+                            <select name="sites">
+                                <option>1</option>
+                                <option>2–5</option>
+                                <option>6–20</option>
+                                <option>20+</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>Message<textarea name="message" rows="4" maxlength="4000" placeholder="e.g. Care home, 40 outlets, currently checked monthly by contractor"></textarea></label>
+                    <div class="hp" aria-hidden="true">
+                        <label>Leave this empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Request a demo</button>
+                    <p class="form-privacy">We'll only use these details to reply to your enquiry. See our <a href="privacy.html">privacy notice</a>.</p>
+                    <p class="form-note" id="form-note" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <a href="#top" class="brand" aria-label="Konda Sence home">
+                <svg class="brand-mark" aria-hidden="true"><use href="#konda-mark"/></svg><span class="brand-name">Konda <strong>Sence</strong></span>
+            </a>
+            <nav>
+                <a href="#how">How it works</a>
+                <a href="#why">Why legionella</a>
+                <a href="#hardware">Hardware</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+            <p>&copy; <span id="year">2026</span> Konda Sence. Remote temperature monitoring for legionella control.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js?v=5"></script>
+</body>
+</html>

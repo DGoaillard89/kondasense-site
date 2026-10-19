@@ -1,0 +1,20 @@
+{
+  "name": "konda-sence-website",
+  "version": "1.0.0",
+  "description": "A website for Konda Sence, a remote temperature monitoring company focused on legionella control.",
+  "main": "docs/index.html",
+  "scripts": {
+    "start": "live-server docs"
+  },
+  "keywords": [
+    "temperature monitoring",
+    "legionella control",
+    "remote monitoring"
+  ],
+  "author": "Konda Sence",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
